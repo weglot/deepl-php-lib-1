@@ -204,7 +204,7 @@ class DeepL
             }
         }
 
-        $body = http_build_query($paramsArray, null, '&');
+        $body = http_build_query($paramsArray, '', '&');
 
         if (isset($textString)) {
             $body = $textString.'&'.$body;
